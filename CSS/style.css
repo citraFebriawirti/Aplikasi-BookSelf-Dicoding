@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #cfcccc;
+}
+
+
+/* header */
+
+header {
+    background: #2d3e50;
+    padding: 8px;
+    height: 110px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+/* content 1 */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    width: 1040px;
+    background: #f5f1ff;
+    border: 2px solid #2d3e50;
+    border-radius: 8px;
+    margin: 16px;
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+.big-title {
+    text-align: center;
+    color: #1e2833;
+}
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: -40px;
+}
+
+.form-group label {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1e2833;
+}
+
+input[type='text'],
+input[type='number'] {
+    font-family: Raleway;
+    background: #f5f1ff;
+    border: 2px solid #1e2833;
+    border-radius: 8px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 1px;
+    font-size: 24px;
+    outline: none;
+    padding-bottom: 10px;
+}
+
+#id_member,
+#title,
+#Author,
+#Years::-webkit-input-placeholder {
+    background: #f5f1ff;
+    font-size: 15px;
+    font-family: Poppins;
+}
+
+.btn-submit {
+    width: fit-content;
+    border-radius: 10px;
+    font-family: Poppins;
+    border: 2px solid #1e2833 !important;
+    padding: 10px 20px;
+    color: black;
+    font-size: 15px;
+    margin-top: auto;
+    margin: 5px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #1e262e;
+    color: white;
+}
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #1e2833 !important;
+}
+
+.item>.inner h2 {
+    margin-top: 10px;
+    margin-bottom: unset;
+    font-size: 24px !important;
+    font-weight: bolder;
+}
+
+.item>.inner h5 {
+    margin-top: 5px;
+    margin-bottom: unset;
+    font-size: 20px !important;
+    font-weight: 500;
+    color: red;
+}
+
+.item>.inner p {
+    margin: 0px;
+    font-size: 15px !important;
+    font-weight: 600;
+    color: green;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+
+/* content 2,3, */
+
+.content2,
+.content3 {
+    margin: 10px;
+}
+
+.container-header {
+    color: #1e2833;
+}
+
+
+/* check button */
+
+.check-button {
+    background: url('../Asset/check-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../asset/check-solid.svg');
+    background-size: contain;
+}
+
+
+/* trash button */
+
+.trash-button {
+    background: url('../Asset/trash-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../Asset/trash-fill.svg');
+    background-size: contain;
+}
+
+
+/* undo button */
+
+.undo-button {
+    background: url('../Asset/undo-ouline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../Asset/undo-ouline.svg');
+    background-size: contain !important;
+}
+
+.check-button:focus,
+.trash-button {
+    outline: none;
+}
+
+
+/* footer */
+
+.Footer {
+    background: #485768;
+    padding: 10px;
+    height: 70px;
+    text-align: center;
+}
+
+.Footer P {
+    color: wheat;
+    font-size: 15px;
+    padding-bottom: 1px;
+}
+
+
+/* layar device */
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+    .content2,
+    .content3 {
+        width: 90%;
+    }
+    .wrapper .container {
+        width: 100%;
+    }
+    .list-item {
+        width: 90%;
+    }
+    .form {
+        width: 100%;
+    }
+}
