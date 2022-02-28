@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookSelf Apps || Citra Febriawirti</title>
+    <!-- my fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200;300;400;500&family=Quicksand:wght@500;600;700&family=Viga&display=swap" rel="stylesheet" />
+    <!-- my css -->
+    <link rel="stylesheet" href="/CSS/style.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1>BookSelf Apps</h1>
+    </header>
+    <!-- end header -->
+
+    <!-- content input -->
+    <section class="content1">
+        <div class="wrapper">
+            <div class="container" id="add-book">
+                <h2 class="container-header big-title">Data Buku</h2>
+                <form class="form" action=" # " id="form">
+                    <div class="form-group form-title">
+                        <label for="title">Judul</label>
+                        <input type="text" name="title" id="title" placeholder="masukkan title..." required />
+                    </div>
+                    <div class="form-group form-title">
+                        <label for="date">Penulis</label>
+                        <input type="text" name="Author" id="Author" placeholder="masukkan author..." required />
+                    </div>
+                    <div class="form-group form-title">
+                        <label for="date">Tahun</label>
+                        <input type="number" name="Years" id="Years" placeholder="masukkan years..." required />
+                    </div>
+                    <input type="submit" value="Konfirmasi" id="submit" name="submit" class="btn-submit" />
+                </form>
+            </div>
+            <section class="content2">
+                <div class="container">
+                    <h2 class="container-header">Belum Selesai Dibaca</h2>
+                    <div class="list-item" id="books"></div>
+                </div>
+            </section>
+            <section class="content3">
+                <div class="container">
+                    <h2 class="container-header">Selesai Dibaca</h2>
+                    <div class="list-item" id="completed-books"></div>
+                </div>
+            </section>
+
+            <!-- uji coba list -->
+            <!-- <div class="item shadow ">
+                <div class="inner ">
+                    <h2>Pelangi</h2>
+                    <p>Citra</p>
+                    <p>2021</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- end content input -->
+
+    <!-- footer -->
+    <footer class="Footer">
+        <p>Citra Febriawirti || 2022</p>
+    </footer>
+    <!-- end Footer -->
+</body>
+<script src="/JS/script.js "></script>
+<script src="/JS/dom.js "></script>
+
+</html>
